@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Airbnb tests for filter option" thread-count="2" data-provider-thread-count="1">
+    <parameter name="browser" value="CHROME"></parameter>
+    <parameter name="env" value="AIRBNB"></parameter>
+    <parameter name="quit" value="yes"></parameter>
+    <test name="Airbnb apartment rent tests for filter popup">
+        <classes>
+            <class name="runners.FilterRunner"></class>
+        </classes>
+    </test>
+</suite>

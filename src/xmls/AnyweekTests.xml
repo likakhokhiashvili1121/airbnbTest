@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Airbnb any week tests" thread-count="2" data-provider-thread-count="1">
+    <parameter name="browser" value="CHROME"></parameter>
+    <parameter name="env" value="AIRBNB"></parameter>
+    <parameter name="quit" value="yes"></parameter>
+    <test name="Airbnb apartment rent tests any week option">
+        <classes>
+            <class name="runners.AnyweekRunner"></class>
+        </classes>
+    </test>
+</suite>
